@@ -1,0 +1,82 @@
+body {
+  font-size: 21px;
+  color: #222222;
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+p {
+  color: black; }
+
+nav {
+  position: fixed; }
+
+#header {
+  height: 500px;
+  background: url("../img/header_bg.jpg") no-repeat center center; }
+  #header #main-menu li {
+    display: inline-block; }
+    #header #main-menu li a {
+      color: white; }
+
+#section-content .site-content-block {
+  padding: 0 0 20px 0px; }
+  #section-content .site-content-block:nth-child(odd) {
+    background-color: #f7f7f1; }
+#section-content .site-content-faq {
+  padding: 20px; }
+#section-content .site-content-clients ul li {
+  text-align: center;
+  padding: 20px 0px; }
+  #section-content .site-content-clients ul li img {
+    max-width: 50%;
+    height: auto; }
+
+#footer {
+  background: black;
+  background: url("../img/footer.jpg") no-repeat center center;
+  min-height: 200px;
+  color: white; }
+  #footer h2, #footer a {
+    color: #fff; }
+  #footer .site-footer-touch {
+    height: 200px; }
+  #footer .site-footer-contacts {
+    height: 100px;
+    background: black; }
+
+.line-before:before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 40px;
+  position: relative;
+  background: black;
+  bottom: 0.35em; }
+.line-after:after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 40px;
+  position: relative;
+  background: black;
+  bottom: 0.35em; }
+
+.container_map {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+#map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 22.25%;
+  padding-top: 30px;
+  position: relative; }
+  #map_container {
+    position: relative; }
+
+/*# sourceMappingURL=styles.css.map */
