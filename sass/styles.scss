@@ -1,0 +1,182 @@
+// === COLORS ===
+
+$theme-color: #f7f7f1;
+$secondary-color: blue;
+$ternary-color: yellow;
+$link-color: $secondary-color;
+$text-color: #222222;
+$menu-item-color: white;
+
+$header-background: black;
+
+$footer-background: black;
+
+// === FONTS ===
+$text-font: Helvetica, sans-serif;
+
+$open-sans: "Open Sans", sans-serif;
+$lato: "Lato", sans-serif;
+
+// === SIZES ===
+$desktop-content-width: 960px;
+$tablet-content-width: 960px;
+$mobile-content-width: 960px;
+
+$header-height: 500px;
+$footer-height: 100px;
+
+// @import "variables";
+
+
+// ======= MIXINS -> move to the separate file
+
+@mixin text-line {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 40px;
+    position: relative;
+    background: black;
+    bottom: 0.35em;
+}
+
+// for SEO
+
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+// ========== MIXINS end
+
+body {
+    font-size: 21px;
+    color: $text-color;
+    font-family: $open-sans;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $open-sans;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    color: black;
+}
+
+a {}
+
+nav {
+    position: fixed;
+
+    &.tab-bar {}
+}
+
+#header {
+    height: $header-height;
+    background: url("../img/header_bg.jpg") no-repeat center center;
+
+    #logo {}
+
+    #main-menu {
+        li {
+            display: inline-block;
+
+            a {
+                color: $menu-item-color;
+            }
+        }
+    }
+}
+
+#section-content {
+    .site-content {
+        &-block {
+            padding: 0 0 20px 0px;
+
+            &:nth-child(odd) {
+                background-color: $theme-color;
+            }
+        }
+        &-faq {
+        	padding: 20px;
+        }
+        &-clients {
+        	ul {
+        		li {
+        			text-align: center;
+        			padding: 20px 0px;
+        			img {
+        				max-width: 50%;
+        				height: auto;
+
+        			}
+        		}
+        	}
+        }
+    }
+}
+
+#footer {
+	background: black;
+	background: url("../img/footer.jpg") no-repeat center center;
+	min-height: 200px;
+	color:white;
+
+	h2, a {
+		color: #fff;
+	}
+    .site-footer-touch {
+        height: $footer-height + 100;
+    }
+
+    .site-footer-contacts {
+        height: $footer-height;
+        background: black;
+
+    }
+}
+
+
+
+.line {
+    &-before {
+        &:before {
+            @include text-line;
+        }
+    }
+
+    &-after {
+        &:after {
+            @include text-line;
+        }
+    }
+}
+
+
+
+.container_map{
+  width: 100%;
+  margin: 0 auto;
+  margin-top:50px;
+}
+
+#map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+    &_container{
+  		position: relative;
+	}
+
+}
+
