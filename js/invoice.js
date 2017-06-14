@@ -8,7 +8,7 @@ function showInvoice() {
         var title = inputs[i].getAttribute('placeholder');
         var inputId = inputs[i].getAttribute('id');
         var outputId = "invoice-" + inputs[i].getAttribute('id');
-        document.getElementById(outputId).innerHTML = "<label>" + title + "</label></br>" + document.getElementById(inputId).value;
+        document.getElementById(outputId).innerHTML = "<label>" + title + "</label>" + document.getElementById(inputId).value;
 
         console.log(inputId);
     }
