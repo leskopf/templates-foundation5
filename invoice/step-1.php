@@ -180,16 +180,16 @@
         <div class="row">
           
           <div class="columns small-12 medium-2">
-            <input type="number" id="taskUnit" min="0" name="address taskUnit input" placeholder="Unit">
+            <input type="number" class="taskUnit" min="0" name="taskUnit input" placeholder="Unit">
           </div>
           <div class="columns small-12 medium-6">
-            <input type="text" id="taskDescription" name="taskDescription" placeholder="Task Description">
+            <input type="text" class="taskDescription" name="taskDescription" placeholder="Task Description">
           </div>
           <div class="columns small-12 medium-2">
-            <input type="text" id="taskUnitPrice" name="taskUnitPrice" placeholder="Unit price">
+            <input type="number" class="taskUnitPrice" name="taskUnitPrice" placeholder="Unit price">
           </div>
           <div class="columns small-12 medium-2">
-            <input type="text" id="taskAmount" name="taskAmount" placeholder="Amount">
+            <input type="text" class="taskAmount" name="taskAmount" placeholder="Amount">
           </div>
         </div>
         <hr>

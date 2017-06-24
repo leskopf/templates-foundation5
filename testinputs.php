@@ -192,13 +192,18 @@
                 </li>
               </ul>
               <div class="row">
-                <div class="userAccount mt2 mb2" >
-                  <div class="small-12 medium-6 columns">
+                <div class="enquiryForm mt2 mb2" >
+                  <div class="small-12 medium-12 columns text-center">
+                    <button type="button" id="showEnquiry"class="small" onclick="">Show Enquiry</button>
+                  </div>
+                  <div class="small-12 medium-6 columns" id="enquiryForm">
                     <h5>Contact details</h5>
-                    <label for="">
-                      Contact name
-                    </label>
-                    <input type="text" placeholder="">
+                    <div class="small-12">
+                      <label for="">
+                        Contact name
+                      </label>
+                      <input type="text" placeholder="">
+                    </div>
                     <label for="">
                       Company name
                     </label>
@@ -214,20 +219,20 @@
                   </div>
                   <div class="small-12 medium-6 columns">
                     <h5>Event Information</h5>
-                    <div class="row columns small-12">
-                      <div class="small-12 medium-5 columns row">
+                    <div class="row">
+                      <div class="small-12 medium-5 columns">
                         <label for="">
                           Date of event
+                          <input type="text" name="" placeholder="">
                         </label>
-                        <input type="text" name="" placeholder="">
                       </div>
-                      <div class="row small-12 medium-1  columns">
+                      <div class=" small-12 medium-1  columns" style="line-height:74px;">
                         to
                       </div>
-                      <div class="small-12 medium-6 row columns">
-                        <label for="">
+                      <div class="small-12 medium-6 columns">
+                        <label >&nbsp;
+                          <input type="text" name="" placeholder="">
                         </label>
-                        <input type="text" name="" placeholder="">
                       </div>
                     </div>
                     <label for="">
@@ -291,221 +296,216 @@
                       </label>
                     </div>
                     <div class="columns small-4">
-                      <label for="address-street-zip">ZIP code</label>
-                      <input type="text" id="address-street-zip" name="address zip input" placeholder="Street">
+                      <label for="address-street-zip">ZIP code
+                        <input type="text" id="address-street-zip" name="address zip input" placeholder="Street"></label>
+                      </div>
+                      <label for="">
+                        Location
+                      </label>
+                      <input type="email" placeholder="">
                     </div>
-                    <label for="">
-                      Location
-                    </label>
-                    <input type="email" placeholder="">
-                  </div>
-                  <hr>
-                  <div class="small-12 columns">
-                    <h5>Marquee Requirements</h5>
-                  </div>
-                  <div class="small-12 medium-6 columns">
-                    <label>Marquee Size
-                      <select>
-                        <option value="husker" selected>Please select</option>
-                        <option value="husker">Husker</option>
-                        <option value="starbuck">Starbuck</option>
-                        <option value="hotdog">Hot Dog</option>
-                        <option value="apollo">Apollo</option>
-                      </select>
-                    </label>
-                    <label for="">
-                      Flooring required
-                    </label>
-                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">No</label>
-                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Artifical Grass</label>
-                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Wooden Flooring</label>
-                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Pro-Floor</label>
-                    
-                    <label for="">
-                      Tables or Chairs Required
-                    </label>
-                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">No</label>
-                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Yes</label>
-                  </div>
-                  <div class="small-12 medium-6 columns">
-                    <label>How did you hear about this web site
-                      <select>
-                        <option value="husker" selected>Please select one</option>
-                        <option value="husker">Husker</option>
-                        <option value="starbuck">Starbuck</option>
-                        <option value="hotdog">Hot Dog</option>
-                        <option value="apollo">Apollo</option>
-                      </select>
-                    </label>
-                    <label for="">
-                      Comments
-                    </label>
-                    <textarea name=""></textarea>
-                  </div>
-                  <div class="small-12 medium-12 columns">
-                    <button type="submit" class="small">Send Enquiry</button>
+                    <hr>
+                    <div class="small-12 columns">
+                      <h5>Marquee Requirements</h5>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                      <label for="">
+                        Flooring required
+                      </label>
+                      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">No</label>
+                      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Artifical Grass</label>
+                      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Wooden Flooring</label>
+                      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Pro-Floor</label>
+                      <label for="">
+                        Tables or Chairs Required
+                      </label>
+                      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">No</label>
+                      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Yes</label>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                      <label>How did you hear about this web site
+                        <select>
+                          <option value="husker" selected>Please select one</option>
+                          <option value="husker">Husker</option>
+                          <option value="starbuck">Starbuck</option>
+                          <option value="hotdog">Hot Dog</option>
+                          <option value="apollo">Apollo</option>
+                        </select>
+                      </label>
+                      <label for="">
+                        Comments
+                      </label>
+                      <textarea name=""></textarea>
+                    </div>
+                    <div class="small-12 medium-12 columns">
+                      <button type="submit" class="small" onclick="submitForm();">Send Enquiry</button>
+                    </div>
                   </div>
                 </div>
+                <script type="text/javascript">
+                $(function(){
+                alert("My First Jquery Test");
+                });
+                </script>
               </div>
-            </div>
-            <div class="site-content-block site-content-articles small-12 columns">
-              <div class="site-heading-wrapper"><h2 class="site-heading site-heading-1 text-center"><span class="line-after"> THE</span> <br><span>BLOG</span></h2></div>
-              <div>
-                <ul class="media-list">
-                  <li class="media">
-                    <a class="left" href="#">
-                      <img class="media-object" src="http://placehold.it/64x64" alt="...">
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">Media heading</h4>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint.
-                    </div>
-                  </li>
-                </ul>
+              <div class="site-content-block site-content-articles small-12 columns">
+                <div class="site-heading-wrapper"><h2 class="site-heading site-heading-1 text-center"><span class="line-after"> THE</span> <br><span>BLOG</span></h2></div>
+                <div>
+                  <ul class="media-list">
+                    <li class="media">
+                      <a class="left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="site-content-block site-content-faq small-12 columns">
-              <div class="site-heading-wrapper"><h2 class="site-heading site-heading-1 text-center"><span class="line-before">  THE</span> <br><span>FAQ</span></h2></div>
-              <h3 class="site-heading site-heading-1 text-center subheader">THE <span>Frequently asked questions</span></h2>
-              <div>
-                <ul class="accordion" data-accordion>
-                  <li class="accordion-navigation">
-                    <a href="#panel1a">How much does a website cost?</a>
-                    <div id="panel1a" class="content">
+              <div class="site-content-block site-content-faq small-12 columns">
+                <div class="site-heading-wrapper"><h2 class="site-heading site-heading-1 text-center"><span class="line-before">  THE</span> <br><span>FAQ</span></h2></div>
+                <h3 class="site-heading site-heading-1 text-center subheader">THE <span>Frequently asked questions</span></h2>
+                <div>
+                  <ul class="accordion" data-accordion>
+                    <li class="accordion-navigation">
+                      <a href="#panel1a">How much does a website cost?</a>
+                      <div id="panel1a" class="content">
+                        Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#panel2a">How long does it take to design and build a website?</a>
+                      <div id="panel2a" class="content">
+                        Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#panel3a">Will my website work on mobile devices?</a>
+                      <div id="panel3a" class="content">
+                        Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- Also works with <dl>'s and <dt>'s in place of <ul>'s and <li>'s. -->
+                  <dl class="accordion" data-accordion>
+                    <dd class="accordion-navigation">
+                    <a href="#panel1b">Do you build mobile apps?</a>
+                    <div id="panel1b" class="content">
                       Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
-                  </li>
-                  <li class="accordion-navigation">
-                    <a href="#panel2a">How long does it take to design and build a website?</a>
-                    <div id="panel2a" class="content">
+                    </dd>
+                    <dd class="accordion-navigation">
+                    <a href="#panel2b">Can I sell products on my website?</a>
+                    <div id="panel2b" class="content">
                       Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
-                  </li>
-                  <li class="accordion-navigation">
-                    <a href="#panel3a">Will my website work on mobile devices?</a>
-                    <div id="panel3a" class="content">
-                      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                  </li>
-                </ul>
-                <!-- Also works with <dl>'s and <dt>'s in place of <ul>'s and <li>'s. -->
-                <dl class="accordion" data-accordion>
-                  <dd class="accordion-navigation">
-                  <a href="#panel1b">Do you build mobile apps?</a>
-                  <div id="panel1b" class="content">
-                    Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </div>
-                  </dd>
-                  <dd class="accordion-navigation">
-                  <a href="#panel2b">Can I sell products on my website?</a>
-                  <div id="panel2b" class="content">
-                    Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </div>
-                  </dd>
-                  <dd class="accordion-navigation">
-                  <a href="#panel3b">What is a Content Management System (CMS)?</a>
-                  <div id="panel3b" class="content">
-                    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </div>
-                  </dd>
-                </dl>
-                <!-- You can also use data-content instead of href to point to the content of the accordion -->
-                <ul class="accordion" data-accordion>
-                  <li class="accordion-navigation">
-                    <a href="#" data-content="panel3a">Do you provide training on using the CMS?</a>
-                    <div id="panel3a" class="content ">
-                      Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                  </li>
-                  <li class="accordion-navigation">
-                    <a href="#" data-content="panel3b">We have an existing system - can you make our website talk to that?</a>
+                    </dd>
+                    <dd class="accordion-navigation">
+                    <a href="#panel3b">What is a Content Management System (CMS)?</a>
                     <div id="panel3b" class="content">
-                      Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                  </li>
-                  <li class="accordion-navigation">
-                    <a href="#" data-content="panel3c">Do you write the content for my site?</a>
-                    <div id="panel3c" class="content">
                       Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
-                  </li>
-                  <li class="accordion-navigation">
-                    <a href="#" data-content="panel4c">Can you design my logo?</a>
-                    <div id="panel4c" class="content">
-                      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                  </li>
-                  <li class="accordion-navigation">
-                    <a href="#" data-content="panel4c">Do you outsource your work?</a>
-                    <div id="panel4c" class="content">
-                      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                  </li>
-                </ul>
+                    </dd>
+                  </dl>
+                  <!-- You can also use data-content instead of href to point to the content of the accordion -->
+                  <ul class="accordion" data-accordion>
+                    <li class="accordion-navigation">
+                      <a href="#" data-content="panel3a">Do you provide training on using the CMS?</a>
+                      <div id="panel3a" class="content ">
+                        Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#" data-content="panel3b">We have an existing system - can you make our website talk to that?</a>
+                      <div id="panel3b" class="content">
+                        Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#" data-content="panel3c">Do you write the content for my site?</a>
+                      <div id="panel3c" class="content">
+                        Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#" data-content="panel4c">Can you design my logo?</a>
+                      <div id="panel4c" class="content">
+                        Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#" data-content="panel4c">Do you outsource your work?</a>
+                      <div id="panel4c" class="content">
+                        Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </section>
-        </div>
-        <footer id="footer" class="site-content">
-          <div class="row">
-            <div class="site-footer-touch">
-              <h2 class="site-heading site-heading-1 text-center">Get in<span>TOUCH</span></h2>
-              <div>
-                <div class="small-12 large-6 columns">
-                  
-                  
-                  
-                  <ul class="no-bullet">
-                    <li>45 Perouse Rd</li>
-                    <li>Radnwick</li>
-                    <li>NSW 2031</li>
-                  </ul>
-                  <ul class="inline-list">
-                    <li>
-                      <a href="#"><i class="fi-social-facebook"></i> Facebook</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fi-social-instagram"></i> Instagram</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fi-social-twitter"></i> Twitter</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fi-social-linkedin"></i> LinkedIN</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="small-12 large-6 columns">
-                  <div class="container_map">
-                    <div id="map_container"></div>
-                    <div id="map"></div>
+            </section>
+          </div>
+          <footer id="footer" class="site-content">
+            <div class="row">
+              <div class="site-footer-touch">
+                <h2 class="site-heading site-heading-1 text-center">Get in<span>TOUCH</span></h2>
+                <div>
+                  <div class="small-12 large-6 columns">
+                    
+                    
+                    
+                    <ul class="no-bullet">
+                      <li>45 Perouse Rd</li>
+                      <li>Radnwick</li>
+                      <li>NSW 2031</li>
+                    </ul>
+                    <ul class="inline-list">
+                      <li>
+                        <a href="#"><i class="fi-social-facebook"></i> Facebook</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fi-social-instagram"></i> Instagram</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fi-social-twitter"></i> Twitter</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fi-social-linkedin"></i> LinkedIN</a>
+                      </li>
+                    </ul>
                   </div>
+                  <div class="small-12 large-6 columns">
+                    <div class="container_map">
+                      <div id="map_container"></div>
+                      <div id="map"></div>
+                    </div>
+                  </div>
+                  
                 </div>
+              </div>
+              <div class="site-footer-contacts">
                 
               </div>
             </div>
-            <div class="site-footer-contacts">
-              
-            </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
+        <!-- Exit overlay -->
+        <a class="exit-off-canvas"></a>
       </div>
-      <!-- Exit overlay -->
-      <a class="exit-off-canvas"></a>
     </div>
-  </div>
-  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script>
-  $(document).foundation();
-  </script>
-</body>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
+  </body>
 </html>

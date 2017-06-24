@@ -35,7 +35,7 @@
             <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
           </section>
           <section class="middle tab-bar-section">
-            <h1>Elite Webs <small>Portfolio</small></h1>
+            <h1>Simple invoice maker <small>Australia</small></h1>
           </section>
           <section class="right-small">
             <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -114,21 +114,8 @@
         <section id="invoice-section-content" class="site-content clearfix">
           <div class="row">
             <div class="site-content-block site-content-about small-12 columns">
-              <div class="site-heading-wrapper">
-                <h2 class="site-heading site-heading-1 text-center line-before">
-                Hey
-                </h2>
-              </div>
-              <div class="columns small-12 medium-6 mt1 mb1">
-                <img src="https://scontent.fsyd4-1.fna.fbcdn.net/v/t31.0-8/18556898_923266564482574_5570995655919329223_o.jpg?oh=91efecda1d95789310d81a7a0208f036&oe=59E95206" alt="myphoto">
-              </div>
-              <div class="columns small-12 medium-6">
-                <p>My name is Radim Sysel and i'm digital nomad. I have experience as web developer. I made several small ti mid size web pages. Usually based on <span data-tooltip aria-haspopup="true" class="has-tip" title="Content Management System">CMS</span> Drupal 7.</p>
-                <blockquote>
-                  “The more I learn, the more I realize how much I don't know.”
-                  <cite>Albert Einstein</cite>
-                </blockquote>
-              </div>
+              
+              
             </div>
             <div class="site-content-block site-content-invoice-step site-content-invoice-step-1 small-12 columns">
               <?php include "invoice/step-1.php"; ?>
@@ -137,7 +124,7 @@
               <?php include "invoice/step-2.php"; ?>
             </div>
             <div class="site-content-block site-content-clients small-12 columns">
-              <div class="site-heading-wrapper"><h2 class="site-heading site-heading-1 text-center"><span class="line-before">  My <br></span> CLIENTS</h2></div>
+              <div class="site-heading-wrapper"><h2 class="site-heading site-heading-1 text-center"></div>
             </div>
             
             <div class="site-content-block site-content-faq small-12 columns">
@@ -147,19 +134,11 @@
       </div>
       <footer id="invoice-footer" class="site-content">
         <div class="row">
-          <div class="site-footer-touch">
-            <h2 class="site-heading site-heading-1 text-center">Get in<span>TOUCH</span></h2>
+          <div class="site-footer-touch text-center">
+            <h2 class="site-heading site-heading-1 "></h2>
             <div>
               <div class="small-12 large-6 columns">
-                
-                
-                
-                <ul class="no-bullet">
-                  <li>45 Perouse Rd</li>
-                  <li>Radnwick</li>
-                  <li>NSW 2031</li>
-                </ul>
-                <ul class="inline-list">
+                <ul class="inline-list text-center">
                   <li>
                     <a href="#"><i class="fi-social-facebook"></i> Facebook</a>
                   </li>

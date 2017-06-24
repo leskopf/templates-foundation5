@@ -25,4 +25,15 @@ $(document).ready(function() {
     }, 2000);
     });
 
+    $("input.taskUnitPrice").keyup(function() {
+
+    	var x = $("input.taskUnitPrice").val();
+    	var z = $("input.taskUnit").val();
+
+    	var sum = x * z;
+
+    	$("input.taskAmount").val(sum);
+    	console.log(sum);
+    });
+
 });
